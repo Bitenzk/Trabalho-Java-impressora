@@ -384,5 +384,10 @@ public class Menu{
         }
     }
 
-
+        private void cortar() {
+            int retorno = ImpressoraDLL.INSTANCE.Corte(1);
+            if (retorno != 0) {
+                System.out.println("Erro ao cortar o papel. Retorno: " + retorno);
+            }
+        }
     }
