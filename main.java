@@ -19,6 +19,41 @@ public class Main {
                 System.out.println("Bem-vindo, " + usuario.getLogin() + "!");
                 break;
             }
+            System.out.println("Usuario ou senha incorretos. Tentativas restantes: " + (3 - tentativa));
         }
+        if (!logado) {
+            System.out.println("Número máximo de tentativas atingido. Acesso negado.");
+            sc.close();
+            return;
+        }
+
+        impressora impressora = new impressora();
+        Menu menu = new Menu(impressora, sc);
+
+        menu.executar();
+
+        if(impressora.isConexaoAberta()) {
+            impressora.fecharConexao();
+            System.out.println("Conexão com a impressora fechada.");
+        }
+        sc.close();
+    }
+}
+
+public class Usuario {
+    private String login;
+    private String senha;
+
+    public Usuario(String login, String senha) {
+        this.login = login;
+        this.senha = senha;
+    }
+
+    public boolean autenticar(String login, String senha) {
+        return this.login.equals(login) && this.senha.equals(senha);
+    }
+
+    public String getLogin() {
+        return login;
     }
 }
