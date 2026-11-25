@@ -66,3 +66,4 @@ Documentação da biblioteca JNA.
 Vitor Bitencourt
 Luan Nogueira
 Flávio Henrique
+Samuel da silva Pereira
