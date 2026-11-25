@@ -65,4 +65,4 @@ Documentação da biblioteca JNA.
 👥 Autores
 Vitor Bitencourt
 Luan Nogueira
-
+Flávio Henrique
