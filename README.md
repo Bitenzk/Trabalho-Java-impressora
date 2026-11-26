@@ -1,6 +1,5 @@
 ﻿# Trabalho-Java-impressora
 
- *🖨️ Sistema de Comunicação com Impressora Elgin*
 ## 📘 Sobre o Projeto
 
 *Este projeto consiste em uma aplicação Java desenvolvida para realizar a comunicação com impressoras térmicas Elgin por meio da biblioteca JNA e da DLL E1_Impressora01. O sistema disponibiliza métodos para impressão de textos, QR Codes, códigos de barras e controle de recursos da impressora. A comunicação é realizada conforme a arquitetura da JVM (x86 ou x64).*
